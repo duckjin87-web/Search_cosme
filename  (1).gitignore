@@ -1,0 +1,34 @@
+# 수집 데이터 — 저작권·약관 문제로 레포에 올리지 않음
+/data/
+/cache/
+/snapshots/
+*.jpg
+*.jpeg
+*.png
+*.webp
+
+# 환경 변수 · API 키
+.env
+.env.*
+!.env.example
+*.key
+credentials.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Node
+node_modules/
+dist/
+build/
+npm-debug.log*
+
+# OS · 에디터
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
