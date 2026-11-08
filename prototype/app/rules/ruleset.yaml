@@ -1,0 +1,104 @@
+# 표시사항 체크리스트 룰셋 — docs/ruleset.md 와 함께 관리한다.
+# 법령이 바뀌면 이 파일과 ruleset.md 만 고친다. 코드는 건드리지 않는다.
+version: "0.1-proto"
+
+thresholds:
+  ocr_line_conf: 0.80   # 이 값 미만인 줄이 있는 면은 "전부 읽었다"고 보지 않는다
+  face_conf: 0.70       # 면 분류 신뢰도가 이 값 미만이면 면에 배치하지 않는다
+
+# 구간 추출 시 다음 구간의 시작으로 보는 표지어
+section_markers:
+  - 전성분
+  - 사용방법
+  - 사용법
+  - 주의사항
+  - 제조업자
+  - 제조원
+  - 책임판매업자
+  - 판매원
+  - 용량
+  - 내용량
+  - 사용기한
+  - 개봉 후 사용기간
+  - 제조번호
+  - LOT
+  - EXP
+  - 분리배출
+  - 고객상담
+  - "기능성:"
+
+items:
+  - id: product_name
+    name: 제품명
+    basis: 화장품법 기재사항
+    faces: [front]
+    extract: product_name
+    detail_text: false
+
+  - id: ingredients
+    name: 전성분
+    basis: 화장품법 기재사항
+    faces: [back]
+    extract: section
+    groups: [[전성분]]
+    detail_text: true
+
+  - id: volume
+    name: 용량·중량
+    basis: 화장품법 기재사항
+    faces: [front, back]
+    extract: volume
+    detail_text: true
+
+  - id: expiry
+    name: 사용기한 또는 개봉 후 사용기간
+    basis: 화장품법 기재사항
+    # 주 확인 면은 후면. 실제 일자는 하면·씰링부 각인이 많아 함께 본다.
+    faces: [back, bottom]
+    extract: section
+    groups: [[사용기한, 개봉 후 사용기간, EXP]]
+    single_line: true
+    detail_text: false
+
+  - id: lot_position
+    name: 제조번호 표기 위치
+    basis: 화장품법 기재사항
+    faces: [bottom]   # 용기형은 바닥, 튜브는 씰링부
+    extract: section
+    groups: [[제조번호, LOT, Lot]]
+    single_line: true
+    detail_text: false
+
+  - id: maker
+    name: 제조업자·책임판매업자
+    basis: 화장품법 기재사항
+    faces: [back]
+    extract: section
+    groups: [[제조업자, 제조원], [책임판매업자, 판매원]]
+    detail_text: true
+
+  - id: usage_caution
+    name: 사용방법·주의사항
+    basis: 화장품법 기재사항
+    faces: [back]
+    extract: section
+    groups: [[사용방법, 사용법], [주의사항]]
+    detail_text: true
+
+  - id: functional
+    name: 기능성 문구
+    basis: 기능성화장품 해당 시
+    faces: [front]
+    extract: keywords
+    keywords: [기능성화장품, 미백, 주름 개선, 자외선 차단, 자외선차단]
+    detail_text: true
+    conditional: 기능성화장품이 아니면 표기 의무 없음
+
+  - id: recycling
+    name: 분리배출·재질 표시
+    basis: 분리배출 표시 기준
+    faces: [left, right]
+    extract: section
+    groups: [[분리배출]]
+    single_line: true
+    detail_text: false

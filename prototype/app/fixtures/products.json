@@ -1,0 +1,194 @@
+{
+  "_note": "프로토타입 예시 데이터. 브랜드·제품·URL은 모두 가상이며 실제 채널에서 수집한 값이 아니다.",
+  "products": [
+    {
+      "product_key": "samplecos-barrier-cream-50ml",
+      "brand": "샘플코스",
+      "name": "수분 장벽 크림",
+      "volume": "50mL",
+      "barcode": "8800000000017",
+      "category": "container",
+      "listings": {
+        "naver": {
+          "source_url": "https://example.com/naver-shopping/catalog/1001",
+          "title_raw": "[샘플코스] 수분 장벽 크림 50ml 세라마이드 보습크림",
+          "images": [
+            {"id": "a-nv-front", "face": "front", "face_conf": 0.96, "w": 1000, "h": 1000,
+             "content": "a-front-v2",
+             "ocr": [
+               {"text": "SAMPLECOS", "conf": 0.97},
+               {"text": "수분 장벽 크림", "conf": 0.95},
+               {"text": "Moisture Barrier Cream", "conf": 0.93},
+               {"text": "50mL", "conf": 0.94}
+             ]}
+          ]
+        },
+        "hwahae": {
+          "source_url": "https://example.com/hwahae/products/2001",
+          "title_raw": "샘플코스 수분 장벽 크림",
+          "detail_text": "용량: 50mL\n전성분: 정제수, 글리세린, 부틸렌글라이콜, 세라마이드엔피, 나이아신아마이드, 판테놀, 마데카소사이드, 카보머, 트로메타민, 1,2-헥산다이올\n사용방법: 스킨케어 마지막 단계에서 적당량을 펴 바릅니다.",
+          "images": [
+            {"id": "a-hw-front", "face": "front", "face_conf": 0.96, "w": 1000, "h": 1000,
+             "content": "a-front-v2",
+             "ocr": [
+               {"text": "SAMPLECOS", "conf": 0.97},
+               {"text": "수분 장벽 크림", "conf": 0.95},
+               {"text": "Moisture Barrier Cream", "conf": 0.93},
+               {"text": "50mL", "conf": 0.94}
+             ]},
+            {"id": "a-hw-back", "face": "back", "face_conf": 0.93, "w": 1080, "h": 1440,
+             "ocr": [
+               {"text": "수분 장벽 크림", "conf": 0.94},
+               {"text": "용량: 50mL", "conf": 0.92},
+               {"text": "전성분: 정제수, 글리세린, 부틸렌글라이콜, 세라마이드엔피, 판테놀, 마데카소사이드, 카보머, 트로메타민, 1,2-헥산다이올", "conf": 0.86},
+               {"text": "사용방법: 적당량을 덜어 얼굴 전체에 부드럽게 펴 바릅니다.", "conf": 0.91},
+               {"text": "주의사항: 1) 사용 시 또는 사용 후 직사광선에 의해 붉은 반점, 부어오름, 가려움증 등 이상 증상이 있으면 전문의와 상담할 것 2) 상처가 있는 부위에는 사용을 자제할 것", "conf": 0.84},
+               {"text": "사용기한: 별도 표기일까지 (개봉 후 12개월)", "conf": 0.90},
+               {"text": "제조업자: 샘플코스메틱 주식회사", "conf": 0.92},
+               {"text": "책임판매업자: (주)샘플코스", "conf": 0.93},
+               {"text": "고객상담실 080-000-0000", "conf": 0.90}
+             ]},
+            {"id": "a-hw-left", "face": "left", "face_conf": 0.88, "w": 800, "h": 1000,
+             "ocr": [
+               {"text": "분리배출 용기: PP / 캡: PP", "conf": 0.89},
+               {"text": "8800000000017", "conf": 0.95}
+             ]},
+            {"id": "a-hw-life", "face": "lifestyle", "face_conf": 0.91, "w": 1200, "h": 800,
+             "ocr": [{"text": "촉촉한 장벽 케어", "conf": 0.90}]}
+          ]
+        }
+      },
+      "history": [
+        {
+          "collected_at": "2026-08-14T10:20:00+09:00",
+          "listings": {
+            "naver": {
+              "source_url": "https://example.com/naver-shopping/catalog/1001",
+              "title_raw": "[샘플코스] 수분 장벽 크림 50ml",
+              "images": [
+                {"id": "a-old-nv-front", "face": "front", "face_conf": 0.95, "w": 1000, "h": 1000,
+                 "content": "a-front-v1",
+                 "ocr": [
+                   {"text": "SAMPLECOS", "conf": 0.96},
+                   {"text": "수분 장벽 크림", "conf": 0.95},
+                   {"text": "50mL", "conf": 0.94}
+                 ]}
+              ]
+            },
+            "hwahae": {
+              "source_url": "https://example.com/hwahae/products/2001",
+              "title_raw": "샘플코스 수분 장벽 크림",
+              "detail_text": "용량: 50mL\n전성분: 정제수, 글리세린, 부틸렌글라이콜, 세라마이드엔피, 판테놀, 카보머, 트로메타민, 1,2-헥산다이올, 향료",
+              "images": [
+                {"id": "a-old-hw-back", "face": "back", "face_conf": 0.92, "w": 1080, "h": 1440,
+                 "ocr": [
+                   {"text": "수분 장벽 크림", "conf": 0.93},
+                   {"text": "용량: 50mL", "conf": 0.91},
+                   {"text": "전성분: 정제수, 글리세린, 부틸렌글라이콜, 세라마이드엔피, 판테놀, 카보머, 트로메타민, 1,2-헥산다이올, 향료", "conf": 0.87},
+                   {"text": "사용방법: 적당량을 덜어 얼굴 전체에 부드럽게 펴 바릅니다.", "conf": 0.90},
+                   {"text": "주의사항: 1) 사용 시 또는 사용 후 직사광선에 의해 붉은 반점, 부어오름, 가려움증 등 이상 증상이 있으면 전문의와 상담할 것", "conf": 0.85},
+                   {"text": "사용기한: 별도 표기일까지 (개봉 후 12개월)", "conf": 0.90},
+                   {"text": "제조업자: 샘플코스메틱 주식회사", "conf": 0.92},
+                   {"text": "책임판매업자: (주)샘플코스", "conf": 0.92}
+                 ]}
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "product_key": "samplecos-barrier-cream-set",
+      "brand": "샘플코스",
+      "name": "수분 장벽 크림 기획세트",
+      "volume": "50mL+15mL",
+      "barcode": null,
+      "category": "container",
+      "listings": {
+        "naver": {
+          "source_url": "https://example.com/naver-shopping/catalog/1002",
+          "title_raw": "[기획] 샘플코스 수분 장벽 크림 50ml+15ml 증정",
+          "images": [
+            {"id": "a2-nv-front", "face": "front", "face_conf": 0.90, "w": 1000, "h": 1000,
+             "ocr": [
+               {"text": "SAMPLECOS", "conf": 0.95},
+               {"text": "수분 장벽 크림 기획세트", "conf": 0.92},
+               {"text": "50mL + 15mL", "conf": 0.90}
+             ]}
+          ]
+        }
+      }
+    },
+    {
+      "product_key": "samplecos-daily-sun-50ml",
+      "brand": "샘플코스",
+      "name": "데일리 선크림",
+      "volume": "50mL",
+      "barcode": "8800000000024",
+      "category": "tube",
+      "listings": {
+        "naver": {
+          "source_url": "https://example.com/naver-shopping/catalog/1003",
+          "title_raw": "샘플코스 데일리 선크림 SPF50+ PA++++ 50ml",
+          "images": [
+            {"id": "b-nv-front", "face": "front", "face_conf": 0.94, "w": 1000, "h": 1000,
+             "ocr": [
+               {"text": "SAMPLECOS", "conf": 0.96},
+               {"text": "데일리 선크림", "conf": 0.94},
+               {"text": "SPF50+ PA++++", "conf": 0.92},
+               {"text": "자외선 차단 기능성화장품", "conf": 0.88},
+               {"text": "50mL", "conf": 0.93}
+             ]}
+          ]
+        },
+        "hwahae": {
+          "source_url": "https://example.com/hwahae/products/2003",
+          "title_raw": "샘플코스 데일리 선크림",
+          "detail_text": "용량: 50mL\n전성분: 정제수, 에틸헥실메톡시신나메이트, 징크옥사이드, 사이클로펜타실록세인, 부틸렌글라이콜, 나이아신아마이드, 글리세린, 다이메티콘, 1,2-헥산다이올\n기능성: 자외선 차단\n사용방법: 외출 15~30분 전에 적당량을 골고루 펴 바릅니다.",
+          "images": [
+            {"id": "b-hw-back", "face": "back", "face_conf": 0.82, "w": 360, "h": 900,
+             "ocr": [
+               {"text": "데일리 선크림", "conf": 0.86},
+               {"text": "전성분: 정제수, 에틸헥실메톡시신나메…, 징크옥사이드, 사이클로…", "conf": 0.48},
+               {"text": "사용방법: 외출 15~30분 전에 …", "conf": 0.62},
+               {"text": "주의…: 1) …", "conf": 0.41},
+               {"text": "제조…: 샘플…", "conf": 0.44},
+               {"text": "50mL", "conf": 0.83}
+             ]},
+            {"id": "b-hw-bottom", "face": "bottom", "face_conf": 0.86, "w": 900, "h": 300,
+             "ocr": [
+               {"text": "LOT 2509A12", "conf": 0.91},
+               {"text": "EXP 2028.09", "conf": 0.89}
+             ]},
+            {"id": "b-hw-side", "face": "left", "face_conf": 0.55, "w": 500, "h": 900,
+             "ocr": [{"text": "SAMPLECOS", "conf": 0.80}]}
+          ]
+        }
+      }
+    },
+    {
+      "product_key": "samplecos-calming-toner-200ml",
+      "brand": "샘플코스",
+      "name": "진정 토너",
+      "volume": "200mL",
+      "barcode": "8800000000031",
+      "category": "container",
+      "listings": {
+        "naver": {
+          "source_url": "https://example.com/naver-shopping/catalog/1004",
+          "title_raw": "샘플코스 진정 토너 200ml 약산성",
+          "images": [
+            {"id": "c-nv-front", "face": "front", "face_conf": 0.95, "w": 1000, "h": 1000,
+             "ocr": [
+               {"text": "SAMPLECOS", "conf": 0.96},
+               {"text": "진정 토너", "conf": 0.95},
+               {"text": "Calming Toner", "conf": 0.92},
+               {"text": "200mL", "conf": 0.94}
+             ]}
+          ]
+        },
+        "hwahae": {"error": "수집 차단 (HTTP 403, 예시)"}
+      }
+    }
+  ]
+}

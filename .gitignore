@@ -32,3 +32,6 @@ npm-debug.log*
 Thumbs.db
 .vscode/
 .idea/
+
+# 프로토타입 로컬 DB
+prototype/var/
