@@ -33,6 +33,8 @@
 | [docs/proposal.md](docs/proposal.md) | 시스템 제안서 — 기술 스택, 구성, 데이터 모델, 배포, 일정, 선결 과제 |
 | [prototype/](prototype/README.md) | 동작하는 프로토타입 — 예시 데이터로 조회 → 수집 → 면 배치 → 4상태 체크리스트 |
 
+**데모 바로 보기**: https://duckjin87-web.github.io/Search_cosme/ (GitHub Pages, 예시 데이터)
+
 ---
 
 ## 현재 상태
