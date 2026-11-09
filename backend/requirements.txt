@@ -1,0 +1,16 @@
+fastapi>=0.115
+uvicorn[standard]>=0.30
+python-multipart>=0.0.9
+sqlalchemy>=2.0
+psycopg[binary]>=3.2
+celery[redis]>=5.4
+redis>=5.0
+boto3>=1.34
+httpx>=0.27
+beautifulsoup4>=4.12
+pillow>=10.0
+pytesseract>=0.3.10
+anthropic>=2.6
+pyyaml>=6.0
+pytest>=8.0
+moto[s3]>=5.0

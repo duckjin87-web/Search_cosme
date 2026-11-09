@@ -1,0 +1,21 @@
+name: CI · backend
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: OCR·폰트 설치
+        run: sudo apt-get update && sudo apt-get install -y tesseract-ocr tesseract-ocr-kor fonts-nanum
+      - name: 의존성
+        run: pip install -r backend/requirements.txt
+      - name: 테스트
+        working-directory: backend
+        run: pytest -q

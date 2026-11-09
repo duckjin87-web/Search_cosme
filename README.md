@@ -31,6 +31,7 @@
 | [docs/ruleset.md](docs/ruleset.md) | 표시사항 체크리스트 항목과 판정 상태 정의 |
 | [docs/roadmap.md](docs/roadmap.md) | 개발 순서, 검증 게이트, 리스크 |
 | [docs/proposal.md](docs/proposal.md) | 시스템 제안서 — 기술 스택, 구성, 데이터 모델, 배포, 일정, 선결 과제 |
+| [backend/](backend/README.md) | **실제 작동 시스템** — API·워커·DB·OCR·면 분류·판정, 사내 배포 설정 |
 | [prototype/](prototype/README.md) | 동작하는 프로토타입 — 예시 데이터로 조회 → 수집 → 면 배치 → 4상태 체크리스트 |
 
 **데모 바로 보기**: https://duckjin87-web.github.io/Search_cosme/ (GitHub Pages, 예시 데이터)
@@ -43,6 +44,7 @@
 - [x] 목업 — 조회 → 채널별 수집 → 면별 매트릭스 → 체크리스트 흐름 (예시 데이터)
 - [x] 시스템 제안서 작성 — [docs/proposal.md](docs/proposal.md)
 - [x] 프로토타입 — 예시 데이터 기반, MVP 채널 네이버쇼핑 + 화해 ([prototype/](prototype/README.md))
+- [x] 실제 작동 구조 개발 — 사내 업로드·네이버 API·자사몰 파서, Tesseract OCR, PostgreSQL·Celery ([backend/](backend/README.md))
 - [ ] 선결 과제 확정 (법무 범위·외부 API·서버·API 키)
 - [ ] 검증 게이트용 샘플 선정
 - [ ] 수집 모듈 착수

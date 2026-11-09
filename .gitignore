@@ -35,3 +35,4 @@ Thumbs.db
 
 # 프로토타입 로컬 DB
 prototype/var/
+backend/var/
